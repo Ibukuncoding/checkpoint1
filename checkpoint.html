@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        section {
+            margin: 20px 0;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .video, .audio {
+            margin: 20px 0;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="home">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Discover my work and skills in web development.</p>
+            <div class="video">
+                <h3>Introduction Video</h3>
+                <video width="600" controls>
+                    <source src="<iframe width="560" height="315" src="https://www.youtube.com/embed/j4M47qLTeJ4?si=3hh61mtLBTe62Hmd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="audio">
+                <h3>Background Music</h3>
+                <audio controls>
+                    <source src="example-audio.mp3" type="audio/mp3">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm a passionate web developer with a knack for creating engaging and responsive websites. My journey in web development started with a fascination for how things work and a desire to build and create. I specialize in front-end development with a focus on user experience and accessibility.</p>
+        </section>
+
+        <section id="work">
+            <h2>Work</h2>
+            <ul>
+                <li><a href="project1.html">Project 1</a> - A detailed description of Project 1.</li>
+                <li><a href="project2.html">Project 2</a> - A detailed description of Project 2.</li>
+                <li><a href="project3.html">Project 3</a> - A detailed description of Project 3.</li>
+            </ul>
+        </section>
+
+        <section id="resume">
+            <h2>Resume</h2>
+            <table border="1" cellpadding="10">
+                <thead>
+                    <tr>
+                        <th>Experience</th>
+                        <th>Role</th>
+                        <th>Company</th>
+                        <th>Years</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web Developer</td>
+                        <td>Front-End Developer</td>
+                        <td>Tech Solutions</td>
+                        <td>2019-2022</td>
+                    </tr>
+                    <tr>
+                        <td>Software Engineer</td>
+                        <td>Full-Stack Developer</td>
+                        <td>Innovate Inc.</td>
+                        <td>2022-Present</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
